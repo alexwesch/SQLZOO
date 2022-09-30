@@ -32,3 +32,9 @@ SELECT continent, COUNT (name)
 FROM world
 WHERE population >= 10000000
 GROUP BY continent
+
+#8
+SELECT continent
+FROM world
+GROUP BY continent
+HAVING sum(population) >= 100000000
